@@ -35,4 +35,9 @@ public class Enemy : MonoBehaviour
             obj.transform.position = new Vector2(px, py);
         }
     }
+
+    void OnMouseDown()
+    {
+        Debug.Log("マウスクリック！");        
+    }
 }

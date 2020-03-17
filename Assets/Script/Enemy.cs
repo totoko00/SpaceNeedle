@@ -34,10 +34,10 @@ public class Enemy : MonoBehaviour
             float py = Random.Range(3, 7);
             obj.transform.position = new Vector2(px, py);
         }
-    }
-
-    void OnMouseDown()
-    {
-        Debug.Log("マウスクリック！");        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("マウスクリック！");//ここまではOK
+            Destroy();//←ここがわからず……
+        }
     }
 }
